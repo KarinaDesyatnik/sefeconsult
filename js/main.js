@@ -25,5 +25,18 @@ $("#menu").on("click","a", function (event) {
         $('body,html').animate({scrollTop: top}, 1500);
 
     });
+
+// ------start sticky header------
+
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){
+$('.header').addClass("sticky");
+}
+else{
+$('.header').removeClass("sticky");
+}
+});
+
+//-------end sticky header--------
     
 });
