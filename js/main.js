@@ -5,6 +5,16 @@ $('.btn__menu').click(function(){
 	$('.header__menu-wrapper').toggleClass('active');
 })
 
+$('.header .menu li a').click(function(){
+	$('.header__menu-wrapper').removeClass('active');
+})
+
+$('.sub-menu-text').click(function(){
+	$('.header__menu-wrapper').addClass('active');
+
+})
+
+
 $('.sub-menu-item').click(function(){
 	$(this).toggleClass('active');
 	
