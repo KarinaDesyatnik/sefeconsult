@@ -7,10 +7,12 @@ $('.btn__menu').click(function(){
 
 $('.header .menu li a').click(function(){
 	$('.header__menu-wrapper').removeClass('active');
+	$('.btn__menu').removeClass('active');
 })
 
 $('.sub-menu-text').click(function(){
 	$('.header__menu-wrapper').addClass('active');
+	$('.btn__menu').addClass('active');
 
 })
 
